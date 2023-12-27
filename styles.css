@@ -21,6 +21,8 @@ body {
   position: absolute;
   animation: rotateWheel 4s linear infinite;
   cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .wheel:hover {
@@ -40,6 +42,12 @@ body {
     red 50%,
     green 75%,
     yellow 100%
+  );
+  clip-path: polygon(
+    50% 0%,
+    100% 50%,
+    50% 100%,
+    0% 50%
   );
 }
 
